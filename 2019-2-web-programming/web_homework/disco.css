@@ -1,0 +1,475 @@
+@media (min-width: 900px) {
+body{
+  font-family: "@UD Digi Kyokasho NP-R";
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header{
+    width:100%;
+    padding:0 15px 10px;
+    left: 0;
+    height: 60px;
+}
+
+header #logo{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 163px;
+	float:left;
+}
+
+
+header #menu{
+  float:left;
+}
+
+header #menu li{
+    display:inline-block;
+    padding: 14px 0 0;
+    list-style-type : none;
+}
+
+header #menu li a{
+  text-decoration: none;
+  color : #000000;
+  letter-spacing: 2px;
+  font-size: 20px;
+  margin: 0 15px;
+  line-height: 1;
+}
+
+header #menu li a:hover{
+    font-weight: bold;
+}
+
+/*home*/
+#homealbum{
+  margin: 10px 30px;
+  background: url("background3.jpg")  no-repeat fixed center center;
+  background-size: cover;
+  height:800px;
+}
+
+#backinfo{
+  padding-top: 500px;
+  float:right;
+}
+
+#contents_news{
+  display : flex;
+  flex-wrap: wrap;
+  background-color: #EEE;
+  justify-content: center;
+}
+
+#news_box{
+    margin: 20px;
+    background-color: white;
+    word-break: break-all;
+    width : 300px;
+    height: 450px;
+
+}
+
+/*Discography*/
+
+
+#arch {
+    margin: 10px 30px;
+    padding : 5px 0;
+    text-align: center;
+    justify-content: center;
+    background-color: #EEE;
+
+}
+
+
+#arch #title{
+  letter-spacing:2px;
+  font-family: '@UD Digi Kyokasho NP-R';
+  color:gray;
+  font-size: 50px;
+
+
+}
+
+#contents{
+  margin: 0 auto;
+  padding: 0 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#main{
+  margin: 20px 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 4fr;
+  width: 90%;
+  grid-template-rows: auto;
+  float:left;
+  background-color: white;
+}
+
+#album{
+  grid-column: 1;
+  grid-row:1;
+  text-align : center;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding:5px
+}
+
+#text{
+  line-height: 2;
+  text-align: left;
+  font-size: 12px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#jck{
+  margin-left: 0px;
+  padding : 5px;
+  grid-column: 2;
+  grid-row: 1;
+  text-align: center;
+    margin-top:30px;
+}
+
+table{
+  margin-left: 20px;
+  border-collapse: collapse;
+  grid-column: 3;
+  grid-row: 1;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    width:92%;
+}
+
+
+#arch td,th{
+  text-align: center;
+  padding:10px;
+  border: 1px solid black;
+}
+
+
+h2{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+#profilebox{
+  background-color: white;
+  width : 80%;
+  align-items: center;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+#profilearticle{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
+}
+
+
+/*biography*/
+#biographybox{
+  background-color: white;
+  width:90%;
+  align-items: center;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+#biographyarticle{
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: left;
+}
+
+/*movie*/
+#moviewhole{
+  display : flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#moviebox{
+  width:auto;
+  float:none;
+  margin: 10px;
+}
+
+#moviename{
+  margin: 10px;
+  font-size: 13px;
+}
+
+/*footer*/
+footer{
+  background: gray;
+color: #ffffff;
+padding: 50px 0 10px;
+width:100%;
+text-align: center;
+float:left;
+ margin-top: 30px;
+}
+
+#sns_bn{
+  display: inline-block;
+	margin: 0 20px 40px;
+}
+
+
+}
+
+@media (max-width: 900px) {
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+
+  header{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      padding:0 15px 10px;
+      left: 0;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+  }
+
+  header #logo{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 163px;
+
+  }
+
+  header #menu{
+    margin-right: 20px;
+  }
+
+  header #menu li{
+      display:inline-block;
+      padding: 14px 0 0;
+      list-style-type : none;
+
+  }
+
+  header #menu li a{
+
+    text-decoration: none;
+    color : #000000;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 0 15px;
+    line-height: 1;
+  }
+
+  header #menu li a:hover{
+      font-weight: bold;
+  }
+
+  /*home*/
+  #homealbum{
+    margin: 10px 30px;
+    background: url("background3.jpg")  no-repeat fixed center center;
+    background-size: cover;
+    height:652px;
+  }
+
+  #backinfo{
+    padding-top: 400px;
+    float:right;
+    width:500px;
+  }
+
+
+  #contents_news{
+    display : flex;
+    flex-wrap: wrap;
+    background-color: #EEE;
+    justify-content: center;
+  }
+
+  #news_box{
+      margin: 20px;
+      background-color: white;
+      word-break: break-all;
+      width : 300px;
+      height: 450px;
+
+  }
+
+  /*Discography*/
+
+
+  #arch {
+      margin: 10px 30px;
+      padding : 5px 0;
+      text-align: center;
+      background-color: #EEE;
+
+  }
+
+
+  #arch #title{
+    letter-spacing:2px;
+    font-family: '';
+    color:gray;
+    font-size: 50px;
+
+
+  }
+
+  #contents{
+    margin: 0 auto;
+    padding: 0 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  #main{
+    margin: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 90%;
+    grid-template-rows: auto;
+    float:left;
+    background-color: white;
+  }
+
+  #album{
+    grid-column: 1;
+    grid-row:1;
+    text-align : center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding:5px
+  }
+
+  #text{
+    line-height: 2;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  #jck{
+    margin-left: 0px;
+    padding : 5px;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    margin-top:30px;
+    margin-right:30px;
+  }
+
+  #list{
+    grid-column: 1 /span 2;
+    grid-row:2;
+  }
+
+  table{
+    margin-left: 20px;
+    border-collapse: collapse;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-right: 30px;
+      width:92%;
+  }
+
+
+  #arch td,th{
+    text-align: center;
+    height: 30px;
+
+    border: 1px solid black;
+  }
+
+  h2{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #profilebox{
+    background-color: white;
+    width : 80%;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+  #profilearticle{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: left;
+  }
+
+
+  /*biography*/
+  #biographybox{
+    background-color: white;
+    width:90%;
+    align-items: center;
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+
+  #biographyarticle{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: left;
+  }
+
+/*movie*/
+
+  #moviewhole{
+    display : flex;
+    flex-wrap: wrap;
+    float:left;
+    justify-content: center;
+  }
+
+  #moviebox{
+    width:auto;
+    float:none;
+    margin: 10px;
+  }
+
+  #moviename{
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  /*footer*/
+  footer{
+    background: gray;
+  color: #ffffff;
+  padding: 50px 0 10px;
+  width:100%;
+  text-align: center;
+  float:left;
+  }
+
+  #sns_bn{
+    display: inline-block;
+  	margin: 0 20px 40px;
+  }
+
+
+}

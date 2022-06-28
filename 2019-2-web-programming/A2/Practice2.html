@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>jQuery Event</title>
+<style>
+body {
+ margin: 20px;
+ font-family: "¸¼Àº °íµñ";
+}
+button {
+ padding: 5px 15px;
+ font-family: "¸¼Àº °íµñ";
+ background: #666;
+ color: #fff;
+ border: none;
+ cursor: pointer;
+ -webkit-border-radius: 5px;
+}
+</style>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script>
+ $(function(){
+  $("button").click(function(){
+   var url = $(this).attr("title");
+   window.location.href = url;
+  });
+ })
+</script>
+</head>
+
+<body>
+<button id="button0" title="http://www.naver.com">Naver</button>
+<button id="button1" title="http://www.daum.net">Daum</button>
+<button id="button2" title="http://www.google.com">Google</button>
+
+
+</body>
+</html>

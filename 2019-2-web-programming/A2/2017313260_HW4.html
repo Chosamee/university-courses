@@ -1,0 +1,129 @@
+<!DoCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #textbox {
+        border-radius: 10px;
+        border:1px solid black;
+        padding: 10px;
+        color: black;
+        background-color: white;
+      }
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+    <script>
+
+    $(function(){
+     $("button").click(function(){
+      var button = $(this).attr("id");
+
+//problem1
+      if (button == "on"){
+        $("#light").attr("src","on.jpg");
+      }
+      if (button == "off"){
+        $("#light").attr("src","off.jpg");
+      }
+
+//problem2
+      if (button == "see"){
+         $(".problem2").append('<br><img src="logo.png"><br>');
+      }
+
+// problem3
+      if (button == "H"){
+        if($('#himg').attr("src") == "h.jpg"){
+          $('#himg').attr("src","h2.jpg");
+        }
+        else $('#himg').attr("src","h.jpg");
+      }
+      if (button == "T"){
+        if($('#timg').attr("src") == "t.jpg"){
+          $('#timg').attr("src","t2.jpg");
+        }
+        else $('#timg').attr("src","t.jpg");
+      }
+      if (button == "M"){
+        if($('#mimg').attr("src") == "m.jpg"){
+          $('#mimg').attr("src","m2.jpg");
+        }
+        else $('#mimg').attr("src","m.jpg");
+      }
+      if (button == "L"){
+        if($('#limg').attr("src") == "l.jpg"){
+          $('#limg').attr("src","l2.jpg");
+        }
+        else $('#limg').attr("src","l.jpg");
+      }
+      if (button == "5"){
+        if($('#5img').attr("src") == "5.jpg"){
+          $('#5img').attr("src","5-2.jpg");
+        }
+        else $('#5img').attr("src","5.jpg");
+      }
+     });
+   });
+
+   //problem4
+   $(function(){
+   $("#textbox").mouseenter(function(){
+     $("#textbox").css("color", "white");
+     $("#textbox").css("border-radius", "80px");
+     $("#textbox").css("background-color", "#222");
+   });
+
+   $("#textbox").mouseleave(function(){
+     $("#textbox").css("color", "black");
+     $("#textbox").css("border-radius", "10px");
+     $("#textbox").css("background-color", "white");
+   });
+  });
+
+    </script>
+  </head>
+  <body>
+
+    <div class="problem1">
+      <h1>Problem1</h1>
+      Click on/off
+      <button id="on">on</button>
+      <button id="off">off</button>
+
+      <br>
+      <img id="light" src="off.jpg">
+
+    </div>
+
+    <div class="problem2">
+      <h1>Problem2</h1>
+      <button id="see">see image</button>
+      <br>
+    </div>
+
+    <div class="problem3">
+      <h1>Problem3</h1>
+      <button id="H"> <img id="himg" src="h.jpg"> </button>
+      <button id="T"> <img id="timg" src="t.jpg"> </button>
+      <button id="M"> <img id="mimg" src="m.jpg"> </button>
+      <button id="L"> <img id="limg" src="l.jpg"> </button>
+      <button id="5"> <img id="5img" src="5.jpg"> </button>
+    </div>
+
+    <div class="problem4">
+      <h1>Problem4</h1>
+      Mouseover / Mouseout
+      <br><br>
+      <div id="textbox">
+        <br>
+        Hello! Javascript ang jQuery!
+        <br>
+        <br>
+      </div>
+    </div>
+
+  </body>
+</html>

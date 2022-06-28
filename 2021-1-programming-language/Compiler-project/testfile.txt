@@ -1,0 +1,20 @@
+main(){
+    int a;
+    int c;
+    int f;
+    char b;
+
+    b = 4;
+    a = b + 14;
+    f = 3 ;
+    c = 5;
+
+    IF a + 1 > c  THEN {
+	    a=4;
+    }
+    ELSE {
+        int k;
+        a = 22;
+    }
+    EXIT a;
+}

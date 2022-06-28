@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "687286383041",
+    "firebase_url": "https://passign2.firebaseio.com",
+    "project_id": "passign2",
+    "storage_bucket": "passign2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687286383041:android:e36dff902d0f6fd324bf40",
+        "android_client_info": {
+          "package_name": "edu.skku.map.pa2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687286383041-uuo0e86ob543rsqo4io5liu90tnk4q9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXtOoHaO_gfCtgCmvxnmhHaiu4zMKPfTA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687286383041-uuo0e86ob543rsqo4io5liu90tnk4q9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

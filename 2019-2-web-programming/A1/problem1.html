@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Print Star</title>
+    <script>
+    var result="";
+    var x, input;
+
+      function printStar(){
+        input = prompt("정수를 입력하시오");
+        x = parseInt(input);
+
+        if (Number.isInteger(x) == true){
+          for(var i=0; i<input; i++){
+            for(var j=0; j<i+1; j++){
+              document.write("*");
+            }
+            document.write("<br>");
+          }
+        }
+
+        if (Number.isInteger(x)==false){
+          document.write("input error");
+        }
+
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <h1>별 문자 출력하기</h1>
+    __________________________________________________
+    <br> <br>
+    <function printStar>
+      <script>
+        printStar();
+      </script>
+  </body>
+</html>

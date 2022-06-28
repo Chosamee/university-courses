@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_full_name"
+            android:icon="@drawable/user_icon"
+            android:title="Full name" />
+
+        <item android:title="Birthday"
+            android:id="@+id/nav_birthday"
+            android:icon="@drawable/date_icon"/>
+
+        <item android:title="E-mail"
+            android:id="@+id/nav_email"
+            android:icon="@drawable/mail_icon"/>
+    </group>
+</menu>

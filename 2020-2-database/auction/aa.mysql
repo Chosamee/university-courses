@@ -1,0 +1,27 @@
+create table user(
+    email VARCHAR(50) NOT NULL PRIMARY KEY,
+    password VARCHAR(50) NOt NULL);
+
+create table item_list(
+    num int(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    seller VARCHAR(50) NOT NULL,
+    category VARCHAR(15) NOT NULL,
+    cond VARCHAR(15) NOT NULL,
+    description VARCHAR(200),
+    buy_now_price int(10) NOT NULL,
+    bid_price int (10) DEFAULT 0,
+    posted_date VARCHAR(50),
+    bid_end_date VARCHAR(50),
+    sold_date VARCHAR(50),
+    buyer VARCHAR(50),
+    is_traded int(1) NOT NULL DEFAULT 0,
+    bidder_num int(10) DEFAULT 0
+    );
+
+create table bid_history(
+    history int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    num int NOT NULL,
+    bidder VARCHAR(50) NOT NULL,
+    bid_cost int NOT NULL,
+    FOREIGN KEY (num) REFERENCES item_list(num)
+);

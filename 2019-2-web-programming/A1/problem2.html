@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Same Difference</title>
+    <script>
+      var x;
+      var input;
+      var low;
+      function compare(){
+        input = prompt("정수를 입력하시오", "정수로");
+        x = parseInt(input);
+
+        if(Number.isInteger(x)==false){
+          document.write("input error");
+          return;
+        }
+
+        document.write(x);
+        document.write(" : ");
+
+        low = x%10;
+
+        while(x > 10){
+          var x = parseInt(x/10);
+        }
+
+        high=x;
+
+        if(high==low){
+          document.write("Same")
+        }
+
+        else if(high!=low){
+          document.write("Difference")
+        }
+
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <h1>큰 자리수와 낮은 자리수 같은지 비교</h1>
+    __________________________________________________
+    <br> <br>
+    <script>
+      compare();
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/button"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="140dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:text="사용자 아이디: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:text="서버: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/serverName"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:text="캐릭터 이름: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:paddingLeft="10dp"
+                android:text="제목: "
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/titleName"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contents_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/contents_img"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+    </LinearLayout>
+</LinearLayout>

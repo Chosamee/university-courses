@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- Compiled and minified CSS -->
+  <!-- materialize css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- materializecss Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .col {
+      background: white;
+      width: 60%;
+      height: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="col">
+    <form class="form" action="#" method="post" onsubmit="return validation();" novalidate>
+      <label for="StudentNumber"> StudentNumber</label>
+      <input type="text" name="Studentnumber" id="Studentnumber">
+      <div class="validation"></div>
+
+      <label for="ColorCode"> ColorCode</label>
+      <input type="text" name="ColorCode" id="ColorCode">
+      <div class="validation"></div>
+
+      <label for="Password"> Password</label>
+      <input type="text" name="Password" id="Password">
+      <div class="validation"></div>
+
+      <label for="Phonenumber"> Phone number</label>
+      <input type="text" name="Phonenumber" id="Phonenumber">
+      <div class="validation"></div>
+
+      <label for="IP_address"> IP address</label>
+      <input type="text" name="IP_address" id="IP_address">
+      <div class="validation"></div>
+
+      <label for="Birthdate"> Birth date</label>
+      <input type="text" name="Birth_date" id="Birth_date">
+      <div class="validation"></div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
+
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+<script type="text/javascript">
+    function validation() {
+      var Studentnumber = document.getElementById('Studentnumber').value;
+      var regStudentnumber = /^(201[1-9])3\d{5}$/;
+      var ColorCode = document.getElementById('ColorCode').value;
+      var regColorcode = /^#?[0-9A-F]{6}$/;
+      var Password = document.getElementById('Password').value;
+      var regPassword = /^(((?=.*[A-Z])(?=.*[a-z]))|((?=.*[A-Z])(?=.*\d))|((?=.*[A-Z])(?=.*[!@#$%^&*(),]))|((?=.*[a-z])(?=.*\d))|((?=.*[a-z])(?=.*[!@#$%^&*(),]))|((?=.*\d)(?=.*[!@#$%^&*(),])))[A-Za-z\d!@#$%^&*(),]{7,}/;
+      var Phonenumber = document.getElementById('Phonenumber').value;
+      var regPhonenumber = /^(01[016789])((-\d{3,4}-\d{4})|(\d{3,4}\d{4})|( - \d{3,4} - \d{4})|( \d{3,4} \d{4}))$/;
+      var IP_address = document.getElementById('IP_address').value;
+      var regIP_address = /^((\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])\.){3}(\d|[1-9]\d|1\d{2}|2[0-4]\d|25[0-5])$/;
+      var Birth_date = document.getElementById('Birth_date').value;
+      var regBirth_date= /^(1\d{3}|20[01]\d|\d{2})(0[1-9]|1[0-2])(0[1-9]|1[0-9]|2[0-9]|30)$/;
+      document.querySelectorAll('.validation').forEach(function() {
+        var x = document.getElementsByClassName('validation');
+        var i;
+        for (i = 0; i < x.length; i++) {
+          x[i].innerHTML = "";
+        }
+      });
+      if (!regStudentnumber.test(Studentnumber)) {
+        document.getElementsByClassName('validation')[0].innerHTML = "Wrong Input"
+      } if (!regColorcode.test(ColorCode)) {
+        document.getElementsByClassName('validation')[1].innerHTML = "Wrong Input"
+      } if (!regPassword.test(Password)) {
+        document.getElementsByClassName('validation')[2].innerHTML = "Wrong Input"
+      } if (!regPhonenumber.test(Phonenumber)) {
+       document.getElementsByClassName('validation')[3].innerHTML = "Wrong Input"
+      } if (!regIP_address.test(IP_address)) {
+       document.getElementsByClassName('validation')[4].innerHTML = "Wrong Input"
+      } if (!regBirth_date.test(Birth_date)) {
+       document.getElementsByClassName('validation')[5].innerHTML = "Wrong Input"
+      }
+      return false;
+    }
+  </script>
+</html>

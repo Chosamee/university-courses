@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bouncing Ball Example</title>
+<style>
+canvas {
+	background: yellow;
+	border: 1px dotted black;
+}
+</style>
+<script>
+var context;
+var dx = 5; // 한번 움직일 때 이동하는 x 거리
+var dy = 5; // 한번 움직일 때 이동하는 y 거리
+var y = 100; // 초기 원의 y 위치
+var x = 100; // 초기 원의 x 위치
+function draw() {
+var canvas = document.getElementById('myCanvas');
+var context = canvas.getContext('2d');
+context.clearRect(0, 0, 300, 200);
+context.beginPath(); // 원을 그리기 위하여 그리기 시작한다는 함수
+
+context.fillStyle = "red"; // 원 내부는 빨간색이어야 함
+context.arc(x, y, 20, 0, 2 * Math.PI, true); // x, y 중심의 반지름이 20인 원을 그리기
+context.fill(); // 원 내부를 칠하기
+if(x + dx > 280 || x + dx < 20) {
+    dx = -dx;
+}
+if(y + dy > 180 || y + dy <20) {
+    dy = -dy;
+}		// 벽 외부와 접촉했을 때, dx와 dy값은 바뀌어야 함
+
+x += dx;
+y += dy;		// x, y 값이 바뀌어야 함
+
+}
+setInterval(draw, 10); // draw함수 10ms 마다 호출하기
+</script>
+</head>
+<body>
+<canvas id="myCanvas" width="300" height="200"></canvas>
+</body>
+</html>

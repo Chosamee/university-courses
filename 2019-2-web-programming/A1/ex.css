@@ -1,0 +1,21 @@
+*{
+  font-family: "바탕";
+  color:#444444;
+}
+
+h1{
+  color: black;
+  font-size: 30pt;
+}
+h3{
+  color: #222222;
+  font-size: 12pt;
+}
+.red{
+  font-weight: bold;
+  color: red;
+}
+.blue{
+  text-decoration: underline;
+  color:blue;
+}

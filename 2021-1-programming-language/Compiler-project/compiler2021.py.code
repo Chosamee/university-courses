@@ -1,0 +1,13 @@
+0. BEGIN main
+1. b = 4
+2. a = b + 14
+3. f = 3
+4. c = 5
+5. if a + 1 > c THEN goto L1
+6. goto L2
+7. L1
+8. a = 4
+9. L2
+10. a = 22
+11. EXIT a
+12. END main

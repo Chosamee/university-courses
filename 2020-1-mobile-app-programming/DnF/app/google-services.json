@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "409535501006",
+    "firebase_url": "https://ppdnf-3d88f.firebaseio.com",
+    "project_id": "ppdnf-3d88f",
+    "storage_bucket": "ppdnf-3d88f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:409535501006:android:392c2a9e3f87a8b312f69f",
+        "android_client_info": {
+          "package_name": "edu.skku.map.dnf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "409535501006-vrlaips8lujfmgcajdhbmhgor1b5hkl4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgfdidyVT9Y5R48kRUOUQV5XmcBRM7i-0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "409535501006-vrlaips8lujfmgcajdhbmhgor1b5hkl4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

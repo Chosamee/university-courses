@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Table Table</title>
+
+    <style type="text/css">
+      table, tr, td{
+        border : 2px solid black;
+        text-align: center;
+        border-collapse:collapse;
+      }
+      td{
+        width: 40px;
+      }
+    </style>
+
+    <script>
+      var row, column, input;
+      function tablemake(){
+        input = prompt("How many rows?");
+        row = parseInt(input);
+        input = prompt("How many columns?");
+        column = parseInt(input);
+        if(Number.isInteger(row)==false || Number.isInteger(column)==false ){
+          document.write("입력 오류");
+          return;
+        }
+        var str = "<table>";
+        for(var i=0; i<row; i++){
+          str = str + "<tr>";
+          for(var j=0; j<column; j++){
+            str = str + "<td>"+((i+1)*(j+1))+"</td>";
+          }
+          str = str + "</tr>";
+        }
+        str += "</table>";
+        document.write(str);
+        return;
+    }
+    </script>
+  </head>
+
+  <body>
+    <script>
+      tablemake();
+    </script>
+  </body>
+</html>
