@@ -34,3 +34,5 @@ Camera 이동 기능이 존재한다 (회전 확대 이동)
 소방관이 물폭탄을 던져 불을 끄고 사람을 구하는 작은 게임이다
 
 ![asd](https://user-images.githubusercontent.com/48636376/176219439-1e280c3f-78a5-4373-893a-e34b43d128a9.png)
+
+![dd](https://user-images.githubusercontent.com/48636376/176219567-edebca0e-105a-4026-9f15-2b488e3272c2.png)
